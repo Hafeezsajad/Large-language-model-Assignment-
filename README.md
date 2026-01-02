@@ -1,8 +1,7 @@
 # Large-language-model-Assignment-
 Assignment 3  Large language model
-Sentiment Analysis on Amazon Reviews using RoBERTa
-📌 Introduction
-
+### Sentiment Analysis on Amazon Reviews using RoBERTa
+## Introduction
 This project is based on sentiment analysis, which means identifying whether a text is positive or negative.
 
 In this project, Amazon product reviews are used to train and test sentiment classification models.
@@ -14,11 +13,11 @@ A baseline machine learning model using TF-IDF and Logistic Regression
 
 The purpose of this project is to show that transformer-based models perform better than traditional methods.
 
-📂 Dataset
+### Dataset
 
 Dataset Name: Amazon Polarity Reviews
 
-Source: Hugging Face
+### Source: Hugging Face
 
 Classes:
 
@@ -26,7 +25,7 @@ Classes:
 
 1 → Positive review
 
-Data Used
+## Data Used
 
 Training data: 100,000 reviews
 
@@ -34,8 +33,9 @@ Testing data: 20,000 reviews
 
 The dataset is balanced, meaning both classes have similar numbers of samples.
 
-⚙️ Methodology
-🔹 Data Preprocessing
+### Methodology
+
+## Data Preprocessing
 
 Review text is tokenized using RoBERTa tokenizer
 
@@ -45,7 +45,7 @@ Maximum sequence length is set to 128
 
 Data is converted into PyTorch format
 
-🔹 RoBERTa Model
+## RoBERTa Model
 
 Model used: RoBERTaForSequenceClassification
 
@@ -65,7 +65,7 @@ Optimizer: AdamW
 
 Loss function: Cross-Entropy Loss
 
-🔹 Baseline Model
+## Baseline Model
 
 A simple baseline model is implemented for comparison:
 
@@ -75,7 +75,7 @@ Logistic Regression (max iterations = 1,000)
 
 The same dataset split and evaluation metrics are used for fair comparison.
 
-📊 Evaluation Metrics
+### Evaluation Metrics
 
 The following metrics are used:
 
@@ -87,15 +87,15 @@ Recall
 
 F1-Score
 
-✅ Results
+### Results
 Model Performance
 Model	Accuracy	Precision	Recall	F1-Score
 TF-IDF + Logistic Regression	0.8670	0.8650	0.8763	0.8706
 Fine-Tuned RoBERTa	0.9515	0.9514	0.9515	0.9514
 
-✔ The RoBERTa model performs better than the baseline model in all metrics.
+## The RoBERTa model performs better than the baseline model in all metrics.
 
-📉 Discussion
+### Discussion
 
 RoBERTa understands context and meaning of words
 
@@ -103,7 +103,7 @@ TF-IDF only counts words and ignores context
 
 Transformer models give higher accuracy in sentiment analysis tasks
 
-⚠️ Limitations
+### Limitations
 
 Only positive and negative labels are used
 
@@ -113,7 +113,7 @@ RoBERTa requires more computation and GPU support
 
 Model is trained on a subset of the dataset
 
-🚀 Future Work
+### Future Work
 
 Use full dataset
 
@@ -148,7 +148,7 @@ python train_roberta.py
 
 This script fine-tunes the RoBERTa model and evaluates its performance.
 
-⚠️ GPU is recommended for faster training.
+## GPU is recommended for faster training.
 
 📁 Project Structure
 ├── baseline.py
@@ -157,7 +157,7 @@ This script fine-tunes the RoBERTa model and evaluates its performance.
 ├── requirements.txt
 ├── README.md
 
-🛠️ Tools and Libraries Used
+### Tools and Libraries Used
 
 Python
 
@@ -171,7 +171,7 @@ NumPy
 
 Pandas
 
-👨‍🎓 Author
+### Author
 
 Student Assignment Project
 Sentiment Analysis using NLP
